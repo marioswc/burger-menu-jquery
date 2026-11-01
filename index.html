@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobile.css">
+    <title>Menu Responsive JQuery</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container ancho">
+        <div class="mobile-menu">
+          <figure>
+            <img src="/img/logo_arriba.png" alt="Logo empresa 1" />
+          </figure>
+          <i class="fa-solid fa-bars" id="btn-menu"></i>
+        </div>
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">Inicio</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">Servicios</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">Nuestros productos</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">Contactanos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero-container">
+        <div class="hero-text ancho">
+          <h1>
+            Cultivamos verduras orgánicas y las traemos a las traemos a tu mesa
+          </h1>
+        </div>
+      </section>
+      <section>
+        <div class="produ-container ancho">
+          <div class="produ-text">
+            <h2>Nuestros productos</h2>
+            <p>Lo que ofrecemos</p>
+          </div>
+          <div class="cards">
+            <article>
+              <figure>
+                <img src="/img/icono1.png" alt="Imagen del producto" />
+              </figure>
+              <h3>Ganado variado</h3>
+              <p>
+                Carne de res producida sin ingeniería genética, uso de radiación
+                ionizante o lodos de depuradora
+              </p>
+            </article>
+            <article>
+              <figure>
+                <img src="/img/icono2.png" alt="Imagen del producto" />
+              </figure>
+              <h3>Ganado variado</h3>
+              <p>
+                Carne de res producida sin ingeniería genética, uso de radiación
+                ionizante o lodos de depuradora
+              </p>
+            </article>
+            <article>
+              <figure>
+                <img src="/img/icono3.png" alt="Imagen del producto" />
+              </figure>
+              <h3>Ganado variado</h3>
+              <p>
+                Carne de res producida sin ingeniería genética, uso de radiación
+                ionizante o lodos de depuradora
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container ancho">
+        <figure><img src="/img/logo_abajo.png" alt="Logo empresa 2" /></figure>
+      </div>
+    </footer>
+    <script>
+        $("#btn-menu").click(function () {
+            $("#menu").slideToggle("active"); 
+        });
+    </script>
+  </body>
+</html>
